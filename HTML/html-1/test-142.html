@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>margin collapse</title>
+        <style>
+            /* div{
+                display: inline-block;
+            } */
+            .main{
+                width: 200px;
+                height: 200px;
+                border: 1px solid rebeccapurple;
+                background-color: black;
+            }
+            .l{
+                width: 100px;
+                border: 1px solid red;
+                height: 200px;
+                position: relative;
+                background-color: blue;
+                float: left;
+                box-sizing: border-box;
+
+            }
+          .main  .up{
+        
+                height: 95px;
+                border: 3px solid rgb(39, 151, 45);
+                background-color: aqua;
+                width: 100px;
+                float: right;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+               
+            }
+            .d{
+                height: 95px;
+                border: 3px solid rgb(107, 27, 27);
+                width: 100px;
+                float: right;
+                box-sizing: border-box;
+                background-color: rgb(9, 92, 92);
+                margin-bottom: 10px;
+               
+            }
+        </style>
+    </head>
+
+    <body>
+        
+<div class="main">
+    <div class="l"></div>
+    <div class="up"></div>
+    <div class="d"></div>
+</div>
+
+    </body>
+</html>

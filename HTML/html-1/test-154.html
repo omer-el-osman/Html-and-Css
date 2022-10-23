@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            animatoin
+        </title>
+        <style>
+            .contenir{
+                position:absolute;
+                top: 50%;
+                left: 50%;
+                background-color: aqua;
+                width: 200px;
+                height: 200px;
+                transform: translate(-50%,-50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation-name: color;
+                animation-duration: 6s;
+            }
+            @keyframes color{
+                /* from{
+                    background-color: blue;
+                }
+                to{
+                    background-color: red;
+                } */
+
+                0%{
+                    background-color: blue;
+                }
+                25%{
+                    background-color: red;
+                }
+                50%{
+                    background-color: rgb(48, 23, 23);
+                }
+                100%{
+                    background-color: rgb(22, 136, 22);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenir">
+            <h1>d1</h1>
+        </div>
+
+    </body>
+</html>

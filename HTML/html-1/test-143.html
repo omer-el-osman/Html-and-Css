@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>variable</title>
+        <style>
+            *{margin-top: 20px;
+            
+            }
+            :root{
+                --miancolor:blue;
+                --mainpadding:10px;
+            }
+            div{
+                background-color: var(--miancolor,#000);
+                color: aliceblue;
+                padding: var(--mainpadding);
+            }
+            h1{
+                background-color: var(--miancolor,#000);
+                color: aliceblue;
+                padding: var(--mainpadding);
+            }
+            p{
+                background-color: var(--miancolor,#000);
+                color: aliceblue;
+                padding: calc(20px +var(--mainpadding));
+            }
+            .local{
+                --localcolor:red;
+                background-color: var(--localcolor);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            main
+        </div>
+        <h1>
+            mainn
+        </h1>
+
+        <p>mian</p>
+
+        <div class="local">local</div>
+
+    </body>
+</html>

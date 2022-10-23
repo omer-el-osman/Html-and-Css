@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>
+            transform
+        </title>
+        <style>
+           
+            .m{
+                background-color: rgb(186, 210, 231);
+                width: 300px;
+                height: 300px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20%;
+            }
+            .mm{
+                background-color: aqua;
+                width: 200px;
+                height: 200px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                /* transform: scalex(2); */
+                /* transform: scaleY(2); */
+                /* transform: scale(2); */
+                /* transform: rotate(100deg); */
+               /* transform: rotate(-100deg); */
+
+                /* transform: rotate(20grad); */
+                /* transform: rotate(.2turn); */
+                transition: 0.9s;
+                /* matrix : (scaleX,skewX,skewY,scaleY,translateX,translateY)*/
+                /* transform: matrix(2,0.5,0,1,0,0); */
+
+            }
+            .mm:hover{
+                /* transform: scale(-1); */
+                /* transform: skew(50deg); */
+                /* transform: skewX(50deg); */
+                /* transform: skewY(50deg); */
+                transform: skewX(25deg) rotate(700deg) ;
+            }
+            .image{
+                width: 150px;
+                height: 150px;
+              
+             /* margin: 10px; */
+            }
+            .im{
+                width: 155px;
+                height: 155px;
+                background-color: aqua;
+                margin-left: 100px;
+            }
+            .im:hover .image{
+                transition: 2s;
+                transform: scale(1.2) rotate(130deg);
+            }
+            .im:hover {
+                transition: 2s;
+                transform: scale(1.2) rotate(150deg);
+                opacity: .5;
+            }
+            .image1{
+                width: 150px;
+                height: 150px;
+              transform: translate(40px,20px);
+             margin: 10px;
+            }
+            .im1{
+                width: 155px;
+                height: 155px;
+                background-color: aqua;
+                margin-left: 100px;           
+              margin-top: 50px;
+
+            }
+        </style>
+    </head>
+    <body>
+        
+         <div class="m">
+            <div class="mm">
+
+                transform
+
+            </div>
+         </div>
+         <div class="im">
+            <img src="yemek1.jpg" alt="" class="image">
+
+         </div>
+         <div class="im1">
+            <img src="yemek1.jpg" alt="" class="image1">
+
+         </div>
+         <marquee behavior="" direction="">merhaba</marquee>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>pseudo elements</title>
+    <style>
+        p::first-line {
+            color: brown;
+            font-size: 89px;
+        }
+        
+        div span:first-child {
+            color: red;
+        }
+        
+        h1::first-letter {
+            color: aqua;
+            text-transform: capitalize;
+        }
+         
+        h1::before {
+            content: url(download.jpg);
+        }
+        
+        /* h1::after {
+            content: url(download.jpg);
+        } */
+        
+        p::selection {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>this is my text this is my textthis is my textthis is my textthis is my textthis is my textthis is my textthis is my textthis is my textthis is my textthis is my textthis is my textthis is my textthis is my textthis is my textthis is my textthis is
+        my text</p>
+    <hr>
+    <div>
+        <span>this is my text</span><br>
+    </div>
+
+
+    <span>this is my text</span><br>
+    <span>this is my text</span><br>
+    <span>this is my text</span><br>
+    <h1>mehaba</h1>
+    <hr>
+
+</body>
+
+</html>

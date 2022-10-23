@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>flex</title>
+
+
+        <style>
+        
+          .flex{
+            background-color: rgb(233, 241, 248);
+            width: 600px;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            height: 100px;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: nowrap; */
+             /* flex-wrap: nowrap; */
+              /* flex-wrap: wrap-reverse; */
+              /* flex-flow: row wrap; */
+              /* justify-content: flex-start; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+          }
+          .flex div{
+            background-color: red;
+            color: #fff;
+            width: 20px;
+            text-align: center;
+            padding: 20px;
+          
+          
+          }
+          .float{
+            overflow: hidden;
+            background-color: aliceblue;
+            width: 600px;
+            padding: 20px;
+            margin: 20px;
+        
+          
+          }
+          .float div{
+            background-color: red;
+            color: #fff;
+            width: 25%;
+            text-align: center;
+            padding: 20px;
+            float: right
+            
+          }
+          .class{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* align-content: flex-end; */
+
+          }
+
+          .number{
+            background-color: aqua;
+            display: flex;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            width: 700px;
+          }
+          .number div{
+            background-color: rgb(233, 111, 10);
+            display: flex;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            flex-grow: 3;
+
+          }
+          .basis{
+            /* display: flex; */
+            display: inline-flex;
+            /* flex-direction: row; */
+            flex-direction: column;
+            justify-content: space-around;
+            width: 300px;
+            background-color: black;
+            color: #fff;
+          }
+          .basiss{
+            display: flex;
+            background-color: aqua;
+            flex-basis: 200px;
+
+          }
+        </style>
+    </head>
+    <body>
+        <h3>Flex</h3>
+        <div class="flex">
+         
+            <div>bir</div>
+            <div>iki</div>
+            <div>uc</div>
+          
+        </div>
+        <hr>
+        <h3>float</h3>
+        <div class="float">
+            <div>bir</div>
+            <div>iki</div>
+            <div>uc</div>
+         
+        </div>
+<div class="class">
+ <div>  <div>oemr</div>
+ <div>oemr</div>
+ <div>oemr</div>
+ <div>oemr</div>
+ <div>oemr</div></div>
+ <h1>oe</h1>
+
+
+</div>
+
+
+
+<div class="number">
+  <div style="order: 4;">1</div>
+  <div style="order: 3;">2</div>
+  <div>3</div>
+  <div>4</div>
+ <div style="flex-grow: 4;">5</div> <!--  buyutur -->
+  <div style="flex-shrink: 3;">6</div><!--  kucuktur -->
+</div>
+
+
+<!-- flex-basis hem uzunlukte hem de genisliginde-->
+<div class="basis">
+    <div>bir</div>
+    <div>iki</div>
+    <div class="basiss">uc</div>
+    <div>dort</div>
+    <div>bes</div>
+
+</div>
+<div class="inline-flex" style="display:inline-flex;">in</div>
+    </body>
+</html>

@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <title>My display</title>
+    <style>
+        input,
+        img {
+            display: block;
+            /* visibility: hidden;*/
+        }
+        
+        h1 {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+    <img src="download.jpg" />
+    <img src="download.jpg" />
+    <img src="download.jpg" />
+    <h1>omer</h1>
+    <h1>omer</h1>
+    <h1>omer</h1>
+    <h1>omer</h1>
+
+
+
+
+
+
+
+<!-- 
+    /* <display-outside> */
+display: block;
+display: inline;
+display: run-in;
+
+2) القيـمة inline وتعنى ان العنـاصر تاتى بجوار بعضها البعض فى نفس السطر
+
+مع مراعااااة !! ان العنـاصر ال inline لا يمكن أبداً اعطائها الاتى :
+
+width
+
+height
+
+margin-top
+
+margin-bottom
+
+padding-top
+
+padding-bottom ف بعض الاحيـان تعمل
+
+اما بالنسبه ل margin-right و margin-left و padding-right و padding-left
+
+يعملان مع قيمـة inline
+
+دعنى نرى المثـال وستفهم بالتفصيل ما اقصد ( غير القيم وستشاهد التاثير )
+
+http://codepen.io/anon/pen/...
+3) القيمة block وتعنى ان العناصر تاتى تحت بعضها البعض ... قبلها وبعدها
+
+مع مراعاااه !! ان العناصر ال block عكس ال inline تماما
+
+يمكنك اعطائها :
+
+width
+
+height
+
+margin من جميع الجوانب
+
+padding من جميع الجوانب
+
+مع العلم انه فى حين عدم اعطائك للعنصر width معين .. يكون ال width دائما 100%
+
+شاهد المثال
+
+http://codepen.io/anon/pen/...
+وهذا هو الفرق بين العناصر ال block و inline
+
+هو انه يمكن اعطاء طول عرض ومارجين وبادينج للعناصر البلوك فى حين لا يمكن للعناصر ال inline
+
+كما ذكرت مسبقــااا
+
+سؤال يمكن الاستفسار عنه وهو كيف اعرف العناصر block أم inline بدون حفظها ؟
+
+ببساطه شديده جداا .. عن طريق ال background بمعنى
+
+لو اعطيب العنصر background معينه وتاثيرها كان انها خدت ال width 100% مثل ذلك
+
+فاعلم ان هذه العنصر هو عنصر block ... مثال على heading tag شاهد المثال ↓
+
+http://codepen.io/anon/pen/...
+سترى ان الخلفيه جااااءت بعرض الشاشه تمااما لهذه العناصر مع العلم انى لم اعطى عرض معين
+
+فى ذلك الحين تعلم انه هذه العناصر block
+
+على عكس ال inline .. ايضا تقوم باعطاء العناصر المراد معرفته هل هو inline ام block
+
+خاصيه ال background .. لكن فى هذا الحاله لو جاءت لون الخلفيه على الكلام المكتوب
+
+فقط بدون ان تاخد عرض الشاشه كاملا .. فهذه العناصر تكون inline
+
+شاهد المثال
+
+http://codepen.io/anon/pen/...
+سترى ان الخلفيه جاءت على قد المحتوى المكتوب داخل التاج فقط
+
+مما يعنى ان هذه العناصر تكون inline
+
+4) القيمه الاخيرة وهى inline-block
+
+تعنى ادماج مميزات القيمه inline ومميزات القيمه block
+
+فميزة ال inline ان العناصر تيجى بجوار بعضها البعض
+
+وميزة ال block ان العناصر تقدر تتحكم فى الطول والعرض والمارجين والبادينج
+
+لكل كل قيمه على حده لا تفعل ذلك ..
+
+واشهر مثال على هذا القيمه هو النافبـار .. شاهد المثال
+
+http://codepen.io/anon/pen/...
+وجدنا انه عند اعطاء القيمه inline-block جاءت جميع ال li بجوار بعضها البعض
+
+بالاضافه الى انه استطعنا التحكم فى الطول والعرض والمارجين والبادينج
+
+وهذا لا يحدث باسخدام كل خاصيه على حده
+
+يمكنك تحويل العناصر بمعنى مثلا عندك 3 div وهما عناصر بلوك
+
+اذا اردت تحويلهم الى عناصر inline فقم بكتابه خاصيه ال display : inline للديف
+
+حينها بتحول من عنصر بلوك الى inline والعكس صحيح
+
+
+
+/* <display-inside> */
+display: flow;
+display: flow-root;
+display: table;
+display: flex;
+display: grid;
+
+/* <display-outside> + <display-inside> */
+display: block flow;
+display: inline table;
+
+/* <display-listitem> values */
+display: list-item;
+display: list-item block;
+display: list-item inline;
+display: list-item flow;
+display: list-item flow-root;
+display: list-item block flow;
+display: list-item block flow-root;
+display: flow list-item block;
+
+/* <display-internal> */
+display: table-row-group;
+display: table-header-group;
+display: table-footer-group;
+display: table-row;
+display: table-cell;
+display: table-column-group;
+display: table-column;
+display: table-caption;
+
+/* <display-box> */
+display: contents;
+display: none;
+
+/* <display-legacy> */
+display: inline-block;
+display: inline-table;
+display: inline-flex;
+display: inline-grid;
+
+/* القيم العامة */
+display: inherit;
+display: initial;
+display: unset; 
+
+
+
+-->
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,31 @@
+body {
+    color: red;
+    background-color: blueviolet;
+}
+
+
+/*normal selector*/
+
+h2 {
+    color: aqua;
+    background-color: red;
+    font-size: large;
+    border-radius: 9px;
+    display: inline-block;
+}
+
+
+/*class selector */
+
+.my {
+    border-radius: 9px;
+    border: 4px dashed red;
+}
+
+
+/* ID selector */
+
+#myID {
+    color: rebeccapurple;
+    background-color: black;
+}

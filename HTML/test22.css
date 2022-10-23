@@ -1,0 +1,159 @@
+p {
+    color: red;
+    font-size: 40px;
+}
+
+.c {
+    color: black;
+}
+
+#i {
+    color: yellow;
+}
+
+
+/* *************** */
+
+.x {
+    color: blueviolet;
+}
+
+#c {
+    color: brown;
+}
+
+.y {
+ /* background-color: rgba(52, 100, 100, 50%);  */
+    background-image: url("download.jpg");
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y;*/
+    /* background-attachment: scroll; */
+    /* background-attachment: fixed; */
+    /* background-position: center top; */
+    /* background-position: 100px 200px; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    background-size: 100px 200px;
+    /* padding: 10px 40px; */
+    /* padding-left: 40px; */
+    /* margin: -10px 0 0 0; */
+    /* width: 70%;  */
+    /* margin-left: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 3px;
+    border-color: blueviolet;
+    border-style: solid;
+    border: 3px red solid; */
+}
+
+span {
+    background-color: brown;
+    padding: 10px;
+    border-radius: 50px;
+    border-color: blue;
+    border-style: solid;
+    /* display: block;
+    width: 200px;
+    height: 20px; */
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    margin: 20px;
+    padding: 30px;
+
+}
+
+/* div {
+    background-color: brown;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 25px;
+    height: 20px;
+    border-radius: 50px;
+    border-color: rgb(100, 100, 145);
+    border-style: solid;
+    width: 100px;
+    display: inline;
+} */
+
+.omer {
+    background-color: rgb(207, 30, 30);
+    border-left: 9px solid blue;
+    /* border-radius: 0px; */
+    border-bottom: 9px solid blue;
+    /* display: inline;
+     */
+     /* width: 44px;height: 55px; */
+    /* visibility: hidden; */
+}
+
+.bir {
+    background-color: rgb(123, 123, 143);
+    border-bottom: 2px solid rgb(39, 6, 102);
+    color: blue;
+}
+
+.iki {
+    background-color: rgb(123, 123, 143);
+    border-bottom: 2px solid red;
+    color: brown;
+}
+
+.uc {
+    background-color: rgb(123, 123, 143);
+    border-bottom: 2px solid rgb(15, 3, 3);
+    color: black;
+}
+
+.dort {
+    background-color: rgb(123, 123, 143);
+    border-bottom: 2px solid rgb(77, 212, 84);
+    color: aquamarine;
+}
+
+.bir,
+.iki,
+.uc,
+.dort {
+    padding: 15px;
+    margin: 10px 0;
+    width: 300px;
+    height: 20px;
+}
+
+div .tt,
+h2 {
+    color: rgb(153, 103, 28);
+    background-color: brown;
+    text-shadow: 1px 0 2px red;
+    width: fit-content;
+}
+
+.tt {
+    overflow: auto;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.text {
+    direction: rtl;
+}
+
+
+/* *************** */
+
+
+/* *************** */
+
+
+/* *************** */
+
+
+/* *************** */
+
+
+/* *************** */

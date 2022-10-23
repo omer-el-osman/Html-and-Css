@@ -1,0 +1,235 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(27, 49, 73);
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: rgb(75, 75, 155);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(75, 75, 155);
+    font-weight: 520;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+
+.navigation a:hover {
+    color: rgb(224, 97, 97)
+}
+
+section {
+    padding: 100px 100px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("dd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.main span {
+    color: rgb(86, 86, 206);
+    font-size: 40px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.main h3 {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-btn {
+    color: aliceblue;
+    background-color: rgb(25, 25, 80);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid rgb(25, 25, 80);
+    border-radius: 9px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    transition: 0.7s ease;
+    /*للتحول من شيى لاخر خلال فترة زمنية*/
+}
+
+.main-btn:hover {
+    background-color: rgb(16, 16, 68);
+    transform: scale(1.1);
+}
+
+.icons a {
+    color: aliceblue;
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+.title {
+    /* text-align: center;*/
+    display: flex;
+    justify-content: center;
+    color: rgb(16, 16, 68);
+    font-size: 30px;
+    font-weight: 20px;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /*من اجل الكروت تاتي بنفس السطر جنبا الى جنب*/
+    flex-wrap: wrap;
+    /*مهما زودنا كروت سوف تاتي جنب بعض وتصغر حجم الكرت*/
+}
+
+.card {
+    background-color: #fff;
+    width: 250px;
+    box-shadow: 0 5px 25px rgba(45, 37, 53, 50%);
+    border-radius: 9px;
+    padding: 25px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: rgb(16, 16, 68);
+    font-size: 50px;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: rgb(16, 16, 68);
+    font-weight: 700;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.projects {
+    background-color: black;
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.project-card {
+    border: 2px solid #fff;
+    border-radius: 9px;
+    min-height: 40px;
+    width: 300px;
+    overflow: hidden;
+    margin: 20px;
+    transition: 0.7s ease;
+    background-color: #fff;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .imge {
+    opacity: 0.8;
+}
+
+.imge img {
+    width: 100%;
+}
+
+.txt {
+    padding: 3px;
+}
+
+.category {
+    font-size: 10px;
+    color: black;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: rgb(16, 16, 68);
+}
+
+.more-details:hover {
+    color: rgb(58, 36, 78);
+}
+
+.footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.footer-title span {
+    color: rgb(25, 25, 78);
+    font-weight: 400;
+}
+
+.footer .icons a {
+    font-size: 20px;
+    padding: 0px;
+}

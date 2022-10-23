@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>grid</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0px;
+                padding: 0px;
+            }
+            ul li{
+                display: inline;
+                margin-left: 30px;
+                
+            }
+            .page{
+                display: grid;
+                height: 100%;
+                grid-template-columns: repeat(10,1fr);
+                grid-template-rows: 50px auto 50px;
+                grid-template-areas: 
+                "logo logo logo nav nav nav nav nav nav nav"
+                "cont cont cont cont cont cont cont side side side"
+                "foot foot foot foot foot foot foot foot foot foot ";
+            }
+            h2{
+                grid-area: logo ;
+                background-color: aqua;
+            }
+            nav{
+                grid-area: nav ;
+                background-color: rgb(17, 39, 39);
+            }
+            
+            section{
+                grid-area: cont ;
+                background-color: rgb(25, 32, 32);
+            }
+            aside{
+                grid-area: side ;
+                background-color: rgb(30, 102, 102);
+            }
+            footer{
+                grid-area: foot ;
+                background-color: rgb(65, 114, 114);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <h2>OMER</h2>
+            <nav>
+                <ul style="list-style-type: none;">
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        servers     
+                   </li>
+                    <li>
+                        contect
+                    </li>
+                </ul>
+            </nav>
+            <section>content</section>
+            <aside>aside</aside>
+            <footer>footer</footer>
+        </div>
+    </body>
+</html>

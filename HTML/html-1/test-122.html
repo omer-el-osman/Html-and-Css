@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>My table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th {
+            height: 40px;
+            background-color: aqua;
+            text-align: left;
+        }
+        /*  tr {
+            background-color: rgb(146, 238, 207);
+        }
+        */
+        
+        tr:nth-child(even) {
+            background-color: rgb(146, 238, 207);
+        }
+        /* .c {
+            background-color: rgb(51, 105, 87);
+        }*/
+        
+        tr:nth-child(odd) {
+            background-color: rgb(51, 105, 87);
+        }
+        
+        tr:hover {
+            background-color: rgb(199, 218, 211);
+        }
+        
+        th,
+        td {
+            padding: 5px;
+            border-bottom: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="overflow-x: auto;">
+
+        <table>
+
+            <tr>
+                <th>number</th>
+                <th>name</th>
+                <th>salary</th>
+            </tr>
+            <tr class="c">
+                <td>0998</td>
+                <td>omer</td>
+                <td>6000</td>
+
+            </tr>
+            <tr>
+                <td>0956</td>
+                <td>ali</td>
+                <td>5000</td>
+
+            </tr>
+            <tr class="c">
+                <td>0908</td>
+                <td>civan</td>
+                <td>9000</td>
+
+            </tr>
+            <tr>
+                <td>09923</td>
+                <td>muhammed</td>
+                <td>1000</td>
+
+            </tr>
+            <tr class="c">
+                <td>0945</td>
+                <td>mahmmud</td>
+                <td>9000</td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

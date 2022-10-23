@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>animtoin</title>
+        <style>
+            div{
+                position:absolute;
+                top: 50%;
+                height: 50%;
+                
+                background-color: aqua;
+                border: 5px solid red;
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 50%;
+                border-left-color: transparent;
+            
+                animation-name: s;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                /*kesiklik olamsin diye*/
+                /* animation-direction: reverse; */
+                /* animation-direction: alternate; */
+                /* animation-direction: alternate-reverse; */
+                /* animation-delay: 3s; */
+                /* animation-fill-mode: forwards; */
+                /*ana rengiye donmayacak*/
+                /* animation-fill-mode:backwards; */
+                animation-play-state: running;
+
+
+
+            }
+            div:hover{
+                animation-play-state: paused;
+            }
+           @keyframes s{
+            0%{
+                transform: rotate(0deg);
+                border-color: black;
+            }
+            50%{
+                transform: rotate(360deg);
+                border-color: blue;
+            }
+            100%{
+                transform: rotate(-360deg);
+            }
+           }
+        </style>
+    </head>
+    <body>
+        
+        <div>
+khj
+        </div>
+    </body>
+</html>

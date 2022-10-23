@@ -1,0 +1,46 @@
+    .ii img {
+        /* background-image: url("od22.jpg");
+        margin: 0px;
+        width: 800px;
+        height: 800px; */
+        /* margin: 10px; */
+        float: left;
+        width: 800px;
+    }
+    
+    .b {
+        padding-right: 100px;
+        color: chartreuse;
+    }
+    
+    .omer {
+        margin-right: 10px;
+    }
+    
+    .lo {
+        color: rgb(37, 25, 216);
+        margin-left: 10px;
+    }
+    
+    .yy {
+        margin-top: 250px;
+        margin-left: 840px;
+    }
+    
+    .l {
+        /* margin-top: 40px;
+        margin-left: 70%; */
+        font-size: 50px;
+        margin-top: 10px;
+        margin-left: 840px;
+    }
+    
+    .us {
+        margin-top: 50px;
+        margin-left: 400px;
+    }
+    
+    .rm {
+        margin-top: -50px;
+        margin-left: 1000px;
+    }
